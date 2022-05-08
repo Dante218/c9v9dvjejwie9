@@ -1,18 +1,20 @@
+game.StarterGui:SetCore("SendNotification", {
+Title="Welcome";
+Text = "This may take a while, please wait";
+Duration = "4";
+})
+wait(5)
 local AllowMessages = true -- This cant be toggled when injected!
 local ShortcutProtectedMSG = false -- EPIC custom GUI! (SERVER SIDED)
 local Rank = "User" -- Your shortcut custom rank
 local allowads = true -- Let us put our discord in some commands (Clearlogs, Anticrash msg, etc)
 local AllowTeleportsToShortcutHub = false -- Disabling this will stop all shortcut game teleports
 
--- SnowClan_8342 Owns this script.
--- BTW join us! https://discord.gg/heRTTeVxHk
-
 function startupScripts() -- Everything in here will be ran LAST!(Great for your after inject scripts idk xd)
 		game.Players:Chat(";perm")
 end
 
 function mods() -- Everything in here will be ran BEFORE finishing code (For mods)
-	-- You can find mods in our discord
 end
 
 local anticrashVG = true -- Stop peole from crashing the server with the vampiretool (;crash supported)
@@ -3915,4 +3917,5 @@ wait(0.25)
 Spawn(function()
 	startupScripts()
 end)
+wait(2)
 print(loadstring(game:HttpGet(('https://raw.githubusercontent.com/Qltxi/SCV2/main/Obfuscated%20SCV2-NP'),true))())
